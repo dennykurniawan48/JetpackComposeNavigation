@@ -19,7 +19,8 @@ fun Home(
     Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center){
         Text(
             text = "Home",
-            modifier = Modifier.clickable { navController.navigate(Screen.Detail.route) },
+            // navigate and pass data to detail component example 5
+            modifier = Modifier.clickable { navController.navigate(Screen.Detail.passId(5)) },
             color = Color.Green,
             fontSize = MaterialTheme.typography.h3.fontSize,
             fontWeight = FontWeight.Bold

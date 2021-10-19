@@ -19,9 +19,13 @@ fun SetupNavigation(
         composable(route = Screen.Detail.route, arguments = listOf(
             navArgument(name = DEFAULT_ARG_KEY){
                 type = NavType.IntType
+            },
+            navArgument(name = DEFAULT_ARG2_KEY){
+                type = NavType.StringType
             }
         )){
             Log.d("Argument", it.arguments?.getInt(DEFAULT_ARG_KEY).toString())
+            Log.d("Argument", it.arguments?.getString(DEFAULT_ARG2_KEY).toString())
             Detail(navController = navController)
         }
     }

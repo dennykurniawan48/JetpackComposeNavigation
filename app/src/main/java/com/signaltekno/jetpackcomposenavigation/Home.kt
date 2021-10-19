@@ -20,7 +20,7 @@ fun Home(
         Text(
             text = "Home",
             // navigate and pass data to detail component example 5
-            modifier = Modifier.clickable { navController.navigate(Screen.Detail.passId(5)) },
+            modifier = Modifier.clickable { navController.navigate(Screen.Detail.passId(5, "DENNY")) },
             color = Color.Green,
             fontSize = MaterialTheme.typography.h3.fontSize,
             fontWeight = FontWeight.Bold
